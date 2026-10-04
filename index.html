@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>University IQ | Excellence académique au cœur de Lomé</title>
+
+<meta name="description"
+content="University IQ - Institution académique moderne à Lomé, Togo. Formez-vous pour devenir les leaders de demain.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#0A2540;
+--gold:#F5B301;
+--teal:#1E88A8;
+--white:#ffffff;
+--light:#F4F6F8;
+--text:#1A1A1A;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:var(--text);
+line-height:1.6;
+background:#fff;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-family:'Poppins';
+font-weight:800;
+font-size:1.6rem;
+color:var(--primary);
+}
+
+.logo span{
+color:var(--gold);
+}
+
+nav ul{
+display:flex;
+gap:24px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:var(--primary);
+font-weight:600;
+}
+
+.hero{
+padding:170px 0 120px;
+background:linear-gradient(rgba(10,37,64,.85),
+rgba(10,37,64,.85)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Poppins';
+font-size:3.4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+margin:5px;
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.highlights{
+padding:60px 0;
+background:var(--light);
+}
+
+.grid-4{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.highlight{
+background:white;
+padding:30px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+font-family:'Poppins';
+font-size:2.3rem;
+text-align:center;
+margin-bottom:50px;
+color:var(--primary);
+}
+
+.programs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card h3{
+font-family:'Poppins';
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.why{
+background:var(--light);
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:white;
+padding:25px;
+border-radius:16px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.quote{
+padding:30px;
+background:white;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.news{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.news img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.news-content{
+padding:20px;
+}
+
+.newsletter{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.newsletter input{
+padding:14px;
+width:300px;
+max-width:100%;
+border:none;
+border-radius:50px;
+margin-right:10px;
+}
+
+footer{
+background:#071829;
+color:white;
+padding:60px 0;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+UNIVERSITY <span>IQ</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">À propos</a></li>
+<li><a href="#">Programmes</a></li>
+<li><a href="#">Admissions</a></li>
+<li><a href="#">Campus</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Excellence académique au cœur de Lomé</h1>
+
+<p>
+Formez-vous pour devenir les leaders de demain.
+</p>
+
+<a href="#" class="btn btn-primary">
+Découvrir nos programmes
+</a>
+
+<a href="#" class="btn btn-secondary">
+S'inscrire maintenant
+</a>
+
+</div>
+
+</section>
+
+<section class="highlights">
+
+<div class="container">
+
+<div class="grid-4">
+
+<div class="highlight">
+🎓
+<h3>Programmes accrédités</h3>
+</div>
+
+<div class="highlight">
+👨‍🏫
+<h3>Corps professoral expérimenté</h3>
+</div>
+
+<div class="highlight">
+🏫
+<h3>Campus moderne</h3>
+</div>
+
+<div class="highlight">
+🌍
+<h3>Réseau international</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Programmes populaires
+</h2>
+
+<div class="programs">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<div class="card-content">
+<h3>Business & Management</h3>
+<p>Licence & Master</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+<div class="card-content">
+<h3>Informatique & Tech</h3>
+<p>Licence & Master</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<div class="card-content">
+<h3>Sciences & Santé</h3>
+<p>Licence & Master</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section why">
+
+<div class="container">
+
+<h2 class="section-title">
+Pourquoi choisir University IQ ?
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">Excellence académique</div>
+<div class="benefit">Programmes innovants</div>
+<div class="benefit">Diplômes reconnus</div>
+<div class="benefit">Partenariats internationaux</div>
+<div class="benefit">Insertion professionnelle</div>
+<div class="benefit">Environnement moderne</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Témoignages étudiants
+</h2>
+
+<div class="testimonials">
+
+<div class="quote">
+"University IQ a transformé mon avenir."
+</div>
+
+<div class="quote">
+"Des enseignants exceptionnels et un campus moderne."
+</div>
+
+<div class="quote">
+"Une expérience académique remarquable."
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Actualités & Événements
+</h2>
+
+<div class="news-grid">
+
+<div class="news">
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+<div class="news-content">
+<h3>Journée Portes Ouvertes 2027</h3>
+</div>
+</div>
+
+<div class="news">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
+<div class="news-content">
+<h3>Conférence Innovation Africa</h3>
+</div>
+</div>
+
+<div class="news">
+<img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+<div class="news-content">
+<h3>Nouveaux programmes internationaux</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<h2>Restez informé</h2>
+
+<p>
+Recevez nos actualités et événements.
+</p>
+
+<br>
+
+<input type="email" placeholder="Votre email">
+
+<a href="#" class="btn btn-primary">
+S'abonner
+</a>
+
+</section>
+
+<footer>
+
+<h3>UNIVERSITY IQ</h3>
+
+<p>
+Lomé • Togo
+</p>
+
+<p>
+© 2026 University IQ. Tous droits réservés.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+header.style.padding="0";
+}else{
+header.style.padding="";
+}
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity=1;
+entry.target.style.transform="translateY(0)";
+}
+});
+});
+
+document.querySelectorAll(".card,.benefit,.quote,.news")
+.forEach(el=>{
+el.style.opacity=0;
+el.style.transform="translateY(40px)";
+el.style.transition=".6s";
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
